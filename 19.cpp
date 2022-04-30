@@ -5,19 +5,19 @@ using namespace std;
 
 int main()
 {
-    int posnum = 0, ctr = 0, sum = 0, max = 0; 
+    int posnum = 0, ctr = 0, sum = 0, max = 0;
     int min = INT_MAX;
     int terval = -1;
     cout << " Input positive integer or " << terval << " to terminate: ";
-    while (cin >> posnum && posnum != terval) 
+    while (cin >> posnum && posnum != terval)
     {
         if (posnum > 0)
         {
             ++ctr;
             sum += posnum;
-            if (max < posnum) 
+            if (max < posnum)
                 max = posnum;
-            if (min > posnum) 
+            if (min > posnum)
                 min = posnum;
         }
         else
